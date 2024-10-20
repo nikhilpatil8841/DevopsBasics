@@ -2,13 +2,14 @@ trigger:
 - master
 
 pool:
-  name: Master
+  name: Master  # Ensure this matches your actual agent pool name
 
 steps:
 - task: JavaToolInstaller@0
   inputs:
-    versionSpec: '11.x'  # This ensures JDK 11 is installed
+    versionSpec: '11.x'  # This ensures JDK 11 is used
     jdkArchitectureOption: 'x64'
+    jdkSourceOption: 'PreInstalled'  # This option assumes that the JDK is already installed
 
 - task: Maven@3
   inputs:
