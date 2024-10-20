@@ -20,9 +20,9 @@ steps:
     goals: 'package'
 - task: CopyFiles@2
   inputs:
-    SourceFolder: '/Notorious/Azure/myagent/_work/1/a'
+    SourceFolder: '/Notorious/Azure/myagent/_work/1/s'
     Contents: '**/*.war'
-    TargetFolder: '/Notorious/Azure/myagent/_work/1/s'
+    TargetFolder: '/Notorious/Azure/myagent/_work/1/a'
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
