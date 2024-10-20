@@ -20,5 +20,8 @@ steps:
     goals: 'package'
 - task: CopyFiles@2
   inputs:
+    SourceFolder: '/Notorious/Azure/myagent/_work/1/a'
     Contents: '**/*.war'
-    TargetFolder: '/Notorious/Azure/myagent/_work/1/a'
+    TargetFolder: '/Notorious/Azure/myagent/_work/1/s'
+
+
