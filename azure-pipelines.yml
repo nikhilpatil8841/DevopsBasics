@@ -13,8 +13,8 @@ steps:
   inputs:
     mavenPomFile: 'pom.xml'
     mavenOptions: '-Xmx3072m'
-    javaHomeOption: 'Path'
-    jdkUserInputPath: '$(JAVA_HOME)'  # Use the path to your JDK installation
+    javaHomeOption: 'JDKVersion'
+    jdkUserInputPath: '$(JAVA_HOME)'  # Explicitly use the path to your JDK installation
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
